@@ -3,7 +3,8 @@ import os
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
-TOKEN = "7557841804:AAGLUoaGveFaPEmM2QfvL5w75Q_PM4IBhes"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 
 # Файлы для хранения данных
 CHAT_USERS_FILE = "chat_users.json"
